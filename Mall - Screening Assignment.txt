@@ -1,0 +1,133 @@
+﻿Interview Project
+This project evaluates your technical skill, design sensibility, AI fluency, and ability to think like a product builder, not just a coder.
+The Brief / Introduction
+The world’s largest shopping malls are no longer just places to shop. They are massive, mixed-use destinations that combine retail, dining, entertainment, hospitality, and live events under one roof, often spanning millions of square feet and attracting tens of millions of visitors per year. Such properties operate more like small cities than traditional shopping centers. They host concert venues, theme parks, aquariums, luxury wings, convention spaces, and year-round programming that draws foot traffic no standalone retailer could generate on its own.
+For a property like this, the sales process is high-stakes. The commercial team is constantly pitching to prospective retail tenants (from luxury flagships to pop-up shops), corporate sponsors and brand partners (who want to activate inside the property), and event promoters and producers (who want to book the property’s venues for concerts, product launches, conventions, and more). Today, that pitch process is fragmented: a sales rep might pull up a YouTube video, flip through a static PDF, open a separate spreadsheet of demographics, and verbally narrate the story of the property. It’s manual, inconsistent, and doesn’t convey the scale or energy of what these properties actually are.
+Your assignment is to build the tool that replaces all of that.
+You will select one of the world’s largest shopping malls as your subject and build a fully interactive, browser-based sales deck for that property. Think of it as a cross between a high-end pitch deck, a luxury brand sales pitch, and an immersive destination experience, all in one. It should be a self-contained web application that a salesperson can screen-share on a live call or send as a standalone link that a prospect can explore on their own, with no one there to walk them through it.
+The tool’s primary audience is prospective tenants, sponsors, and event partners; decision- makers at brands, agencies, and production companies who are evaluating whether to invest in a presence at this property. The tool needs to make them feel the scale, the energy, and the commercial opportunity immediately. Within seconds, the viewer should understand why this property is different and why they need to be part of it. Every section should move them closer to a specific business action: signing a lease, committing to a sponsorship, or booking a venue.
+This is not a static website or a slide deck exported to HTML. It is a purpose-built interactive sales tool designed to tell the property’s story through video, data, imagery, and narrative; with the visual polish of a luxury brand and the interactivity of a modern web experience. The user controls their own journey through the content (non-linear navigation), video is the primary storytelling medium (not decoration), and the overall experience should feel cinematic, confident, and impossible to ignore.
+Choose Your Subject
+Select any of the world’s largest shopping malls as the subject of your project. We recommend choosing one from North America for familiarity and available media assets, but you may choose from the full list here:
+•       Wikipedia - List of the World’s Largest Shopping Malls
+Use publicly available assets from your chosen property: official videos, imagery from the mall’s website, press materials, and any promotional content you can find online. Supplement with strong AI-generated visuals where real assets are limited.
+What This Tool Must Do
+•       Tell the property’s story without anyone needing to explain it
+•       Create immediate emotional buy-in within the first 10 seconds
+•       Make prospective tenants, sponsors, and partners feel: “I need to be here.”
+•       Push toward action: leasing inquiries, sponsorship conversations, event bookings
+•       Work both on live sales calls (screen-shared) and as a standalone link someone can explore alone
+Primary Business Objectives
+Everything in the deck should serve at least one of these goals:
+•       Drive retail leasing deals (luxury, mid-tier, flagship, pop-up)
+•       Drive sponsorship and brand partnership deals
+•       Drive event bookings (concerts, activations, corporate events, product launches)
+•       Promote dedicated venue modules (Performing Arts Centers, Exposition Centers, etc.)
+Why This Matters
+Right now, presenting a property like this requires manually pulling up videos, jumping between files, and verbally explaining what people should be seeing. That’s broken. Your tool should eliminate all of that friction and let the experience speak for itself.
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+Phase 1: Core Interactive Overview
+Build a world-class, fully interactive overview of your chosen property. It should be clean, tight, and high-impact. This is the minimum deliverable.
+Suggested Structure
+You are free to deviate, but the deck should cover these story beats:
+·       Opening: Cinematic intro (video or animated). Immediate impact: scale, energy, differentiation. The viewer should feel the ambition within seconds.
+·       Why This Property: Location, access, scale, visitor demographics, regional reach. Data-driven but visually compelling.
+·       Retail: The retail environment, key tenants, growth trajectory.
+·       Luxury: Elevated, distinct experience (if applicable). Showcase positioning.
+·       Dining & Lifestyle: Food as a lifestyle draw, not an afterthought.
+·       Attractions & Entertainment: Major differentiator. This is often what separates a mega-mall from a regular mall.
+·       Events & Platform: Concerts, brand activations, celebrity appearances. Position the property as a global platform, not just a building.
+Within this structure, include visibility into event hosting capabilities, performing arts potential, and exposition/convention center opportunities, assuming your chosen mall has them (or design them hypothetically).
+Phase 2: Expandable Architecture (Design With This in Mind)
+Phase 1 is the main deliverable. But your architecture should clearly support expansion into deeper, clickable sub-modules. We want to see that you’re thinking beyond the basics.
+If possible, build one or more of these as a working sub-section:
+•       Events Module: Detailed event hosting capabilities, past highlights, booking CTA
+•       Sponsorship Module: Partnership tiers, audience data, activation examples
+•       Leasing Paths: Segmented by category (luxury, retail, F&B, pop-up) with tailored pitches
+•       Venue-Specific Modules: Dedicated sections for performing arts centers, expo halls, or other key venues
+ 
+Experience & Technical Requirements
+Interactive Navigation
+	Non-linear. The viewer controls their journey; not forced through slides.
+	Video-First
+	Video is the primary storytelling medium, not decoration. Autoplay, scroll-triggered, and background video where appropriate.
+	Clean UI
+	Inspired by luxury brands (Apple, Hermès, Tesla). Minimal chrome, maximum impact.
+	Fast & Performant
+	90+ Lighthouse performance score. Lazy loading, optimized assets, no jank.
+	Responsive
+	Must work flawlessly on desktop and tablet. Mobile-friendly is a bonus.
+	AI-Generated Assets
+	Use generative AI to create imagery, renderings, or design elements where real assets are unavailable. Quality matters.
+	Deployable
+	Live URL via GitHub Pages, Vercel, Netlify, or equivalent. We will test it.
+	Source Code
+	Clean, well-structured GitHub repo. README with setup instructions.
+	Creative Direction
+The final product should feel like: the structure of a Digideck, the polish of luxury fashion brands, the energy of Disney/Universal, and the scale of a global destination; all combined into one seamless, browser-based experience.
+Tone: Modern. Confident. High-energy.
+Bottom line: This tool should capture attention, hold engagement, and drive action. It should make someone say: “I want to be part of this.”
+Optional Design References
+Use these for structure, interaction patterns, pacing, and overall feel. Do not copy any single reference; combine the best elements across all of them.
+Interactive Deck / Digideck (Primary Format Reference)
+•       DigiDeck: https://www.thedigideck.com/
+•       Caruso (Digideck example)
+•       Celebrity Cruises (Digideck example)
+•       TD Garden / Boston Bruins (Digideck example)
+•       Tottenham Hotspur (Digideck example)
+Retail / Real Estate / Destination Storytelling
+•       https://thedubaimall.com/
+Experiential / Entertainment / Theme Park
+•       https://disneyland.disney.go.com/
+•       https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida
+Luxury UI / High-End Brand Inspiration
+Apple.com · Tesla.com · Nike.com · LouisVuitton.com · Hermes.com · Gucci.com · SaintLaurent.com
+Event / Venue Inspiration
+Sphere Las Vegas · Madison Square Garden · SoFi Stadium · O2 Arena 
+Important: Below references are for UX/UI direction, interaction design, and storytelling flow (not content). Your content should come from your selected mall’s publicly available media assets, supplemented by AI-generated visuals.  
+How We Evaluate Submissions
+Criteria
+	Weight
+	What We’re Looking For
+	Visual & UX Design
+	30%
+	Does it feel premium? Is the interaction design intuitive and delightful? Does it hold attention?
+	Technical Execution
+	25%
+	Code quality, architecture, performance, responsive behavior, deployment.
+	AI Integration
+	15%
+	How effectively are AI tools used to generate assets, accelerate design, or enhance the experience?
+	Storytelling & Strategy
+	15%
+	Does the deck tell a compelling story? Does it drive toward business action?
+	Expandability
+	10%
+	Is the codebase modular? Can it grow into sub-modules without a rewrite?
+	Attention to Detail
+	5%
+	Typography, spacing, loading states, edge cases, README quality.
+	Submission Instructions
+* Live URL: Deploy your project and share a public live link via GitHub Pages, Vercel, Netlify, or a similar platform.
+* GitHub Repository: Share a public repository with clean code, a clear folder structure, meaningful commits, and a README that includes your tech stack, setup instructions, design decisions, and the AI tools you used.
+* Brief Write-Up (Optional): You may also include a short 1–2 page write-up explaining your design rationale, how you used AI, and what you would improve with more time.
+* Submission: Please email your live URL, GitHub repository link, and any optional write-up to medi@liat.ai
+
+
+Note: The assignment is to build a presentation deck, not a website. See Digideck example above.
+
+
+We’re not looking for perfection. We’re looking for signal.
+Show us how you think, how you build, and how you use AI to move fast at a high level of craft. 
+The compensation can be much higher than the posted amount for exceptional candidates.
