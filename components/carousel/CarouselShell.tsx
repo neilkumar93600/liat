@@ -26,15 +26,19 @@ export default function CarouselShell({ slides }: CarouselShellProps) {
       if (next === activeIndex) return;
       isAnimating.current = true;
       setActiveIndex(next);
-      setTimeout(() => { isAnimating.current = false; }, 900);
+      setTimeout(() => {
+        isAnimating.current = false;
+      }, 900);
     },
-    [activeIndex, slides.length]
+    [activeIndex, slides.length],
   );
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight" || e.key === "ArrowDown") navigate(activeIndex + 1);
-      if (e.key === "ArrowLeft"  || e.key === "ArrowUp")   navigate(activeIndex - 1);
+      if (e.key === "ArrowRight" || e.key === "ArrowDown")
+        navigate(activeIndex + 1);
+      if (e.key === "ArrowLeft" || e.key === "ArrowUp")
+        navigate(activeIndex - 1);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -62,7 +66,11 @@ export default function CarouselShell({ slides }: CarouselShellProps) {
       style={{ background: "#0A0A0A" }}
     >
       <ProgressBar current={activeIndex} total={slides.length} />
-      <SlideNav slides={slides} activeIndex={activeIndex} onNavigate={navigate} />
+      <SlideNav
+        slides={slides}
+        activeIndex={activeIndex}
+        onNavigate={navigate}
+      />
 
       {slides.map((slide, i) => {
         const Component = slide.component;
@@ -80,11 +88,19 @@ export default function CarouselShell({ slides }: CarouselShellProps) {
         aria-label="Previous slide"
         className="fixed left-6 top-1/2 -translate-y-1/2 z-50 w-10 h-10 flex items-center justify-center transition-all duration-300 disabled:opacity-0"
         style={{ color: "rgba(245,245,240,0.4)" }}
-        onMouseEnter={e => (e.currentTarget.style.color = "#C9A84C")}
-        onMouseLeave={e => (e.currentTarget.style.color = "rgba(245,245,240,0.4)")}
+        onMouseEnter={(e) => (e.currentTarget.style.color = "#C9A84C")}
+        onMouseLeave={(e) =>
+          (e.currentTarget.style.color = "rgba(245,245,240,0.4)")
+        }
       >
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-          <path d="M13 4L7 10L13 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <path
+            d="M13 4L7 10L13 16"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </svg>
       </button>
       <button
@@ -93,11 +109,19 @@ export default function CarouselShell({ slides }: CarouselShellProps) {
         aria-label="Next slide"
         className="fixed right-16 top-1/2 -translate-y-1/2 z-50 w-10 h-10 flex items-center justify-center transition-all duration-300 disabled:opacity-0"
         style={{ color: "rgba(245,245,240,0.4)" }}
-        onMouseEnter={e => (e.currentTarget.style.color = "#C9A84C")}
-        onMouseLeave={e => (e.currentTarget.style.color = "rgba(245,245,240,0.4)")}
+        onMouseEnter={(e) => (e.currentTarget.style.color = "#C9A84C")}
+        onMouseLeave={(e) =>
+          (e.currentTarget.style.color = "rgba(245,245,240,0.4)")
+        }
       >
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-          <path d="M7 4L13 10L7 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <path
+            d="M7 4L13 10L7 16"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </svg>
       </button>
 
@@ -106,7 +130,8 @@ export default function CarouselShell({ slides }: CarouselShellProps) {
         className="fixed bottom-6 left-16 z-50 font-sans text-xs tracking-widest"
         style={{ color: "rgba(245,245,240,0.2)" }}
       >
-        {String(activeIndex + 1).padStart(2, "0")} / {String(slides.length).padStart(2, "0")}
+        {String(activeIndex + 1).padStart(2, "0")} /{" "}
+        {String(slides.length).padStart(2, "0")}
       </div>
     </div>
   );
